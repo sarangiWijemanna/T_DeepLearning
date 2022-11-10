@@ -1,5 +1,3 @@
-# Ready to be uploaded to the Google cloud 🚀
-
 import os
 import tensorflow as tf
 import pandas as pd
