@@ -1,4 +1,4 @@
-# SETUP THE MODEL TRAINING LOOP WITH TENSORFLOW ✈️
+# TRAINING COST
 
 import os
 import tensorflow as tf
@@ -102,10 +102,18 @@ with tf.Session() as session:
         # Feed in the training data and do one step of neural network training
         session.run(optimizer, feed_dict={X: X_scaled_training, Y: Y_scaled_training})
 
-        # Print the current training status to the screen
-        print("Training pass: {}".format(epoch))
+        # Every 5 training steps, log our progress
+        if epoch % 5 == 0:
+            training_cost = session.run(cost, feed_dict={X: X_scaled_training, Y:Y_scaled_training})
+            testing_cost = session.run(cost, feed_dict={X: X_scaled_testing, Y:Y_scaled_testing})
 
-        
+            print(epoch, training_cost, testing_cost)
 
     # Training is now complete!
     print("Training is complete!")
+
+    final_training_cost = session.run(cost, feed_dict={X: X_scaled_training, Y: Y_scaled_training})
+    final_testing_cost = session.run(cost, feed_dict={X: X_scaled_testing, Y: Y_scaled_testing})
+
+    print("Final Training cost: {}".format(final_training_cost))
+    print("Final Testing cost: {}".format(final_testing_cost))
