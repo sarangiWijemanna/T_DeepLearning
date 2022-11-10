@@ -13,7 +13,8 @@
 ##### .. 😛 T4.6 ---> Deep Learning_ Save Model to File (Model CheckPoint) Example 1
 ##### .. 😛 T4.7 ---> Deep Learning_ Load Model from File(Load CheckPoint) Example 1
 ##### .. 😛 T4.8 ---> Deep Learning_ Visualize Training Run Example 1
-##### .. 😛 T4.9 ---> Deep Learning_ ustom Visualization Example 1
+##### .. 😛 T4.9 ---> Deep Learning_ Custom Visualization Example 1
+##### .. 😛 T4.10 ---> Deep Learning_ Export Model for Cloud Example 1
 
 
 
