@@ -10,6 +10,7 @@
 #####   😛 T4.3 ---> Deep Learning_ SetUp the Model Training Loop with TensorFlow Example 1
 #####   😛 T4.4 ---> Deep Learning_ Training Cost with TensorFlow Example 1
 #####   😛 T4.5 ---> Deep Learning_ Model Logging with TensorFlow Example 1
+#####   😛 T4.6 ---> Deep Learning_ Save Model to File (Model CheckPoint) Example 1
 
 
 
